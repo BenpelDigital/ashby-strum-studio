@@ -30,8 +30,8 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/9315b045-547d-42fe-8d31-0bfe86809fb3.png"
-                alt="Gary Crosby with electric guitar"
+                src="/lovable-uploads/93596896-3608-495a-ad7e-2a7a9136ebf0.png"
+                alt="Gary Crosby teaching guitar"
                 className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
               />
             </div>

@@ -59,8 +59,8 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <img
-              src="/lovable-uploads/190a836a-6dad-4c40-8e1e-3b415125db79.png"
-              alt="Gary Crosby with Stratocaster guitar"
+              src="/lovable-uploads/93596896-3608-495a-ad7e-2a7a9136ebf0.png"
+              alt="Gary Crosby with guitar"
               className="rounded-lg shadow-lg w-full"
             />
           </div>
