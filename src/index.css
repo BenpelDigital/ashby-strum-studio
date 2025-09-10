@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 20% 98%;
-    --foreground: 30 8% 15%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
-    --card-foreground: 30 8% 15%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 8% 15%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 25 30% 25%;
-    --primary-foreground: 35 25% 95%;
+    --primary: 0 84% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 15% 92%;
-    --secondary-foreground: 30 8% 20%;
+    --secondary: 0 0% 25%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 10% 95%;
-    --muted-foreground: 30 5% 55%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 35 40% 88%;
-    --accent-foreground: 30 8% 20%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 90%;
-    --ring: 25 30% 40%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 84% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom guitar-themed colors */
-    --guitar-wood: 25 35% 45%;
-    --guitar-wood-light: 25 25% 65%;
-    --guitar-amber: 35 55% 55%;
-    --guitar-string: 45 15% 75%;
-    --warm-white: 35 25% 98%;
+    /* Brand colors - dark grey, white, red */
+    --guitar-wood: 0 0% 25%;
+    --guitar-wood-light: 0 0% 40%;
+    --guitar-amber: 0 84% 50%;
+    --guitar-string: 0 0% 60%;
+    --warm-white: 0 0% 100%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--guitar-wood)), hsl(var(--guitar-amber)));
