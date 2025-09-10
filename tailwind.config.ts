@@ -47,6 +47,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "guitar-wood": "hsl(var(--guitar-wood))",
+        "guitar-wood-light": "hsl(var(--guitar-wood-light))",
+        "guitar-amber": "hsl(var(--guitar-amber))",
+        "guitar-string": "hsl(var(--guitar-string))",
+        "warm-white": "hsl(var(--warm-white))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
