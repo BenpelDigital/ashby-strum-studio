@@ -227,7 +227,7 @@ export default function Contact() {
               <Button asChild size="lg" variant="secondary" className="bg-warm-white text-guitar-wood hover:bg-warm-white/90">
                 <a href="tel:01530457659">Call Now</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-guitar-wood">
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-guitar-wood">
                 <a href="mailto:garydean777@yahoo.co.uk">Send Email</a>
               </Button>
             </div>
