@@ -20,10 +20,10 @@ export default function Home() {
                 students' individual musical needs and direction.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" variant="secondary" className="bg-warm-white text-guitar-wood hover:bg-warm-white/90">
+                <Button asChild size="lg" variant="secondary">
                   <Link to="/contact">Book a Lesson</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-guitar-wood">
+                <Button asChild size="lg" variant="outline">
                   <Link to="/about">Learn More</Link>
                 </Button>
               </div>
@@ -195,13 +195,13 @@ export default function Home() {
             location for people seeking music tuition across Leicestershire and Derbyshire.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="bg-warm-white text-guitar-wood hover:bg-warm-white/90">
+            <Button asChild size="lg" variant="secondary">
               <Link to="/contact" className="flex items-center space-x-2">
                 <Phone className="h-5 w-5" />
                 <span>Call Now</span>
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-guitar-wood">
+            <Button asChild size="lg" variant="outline">
               <Link to="/contact" className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
                 <span>Get in Touch</span>
