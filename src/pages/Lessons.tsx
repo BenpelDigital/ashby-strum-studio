@@ -185,7 +185,7 @@ export default function Lessons() {
             <Button asChild size="lg" variant="secondary" className="bg-warm-white text-guitar-wood hover:bg-warm-white/90">
               <Link to="/contact">Get in Touch</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-guitar-wood">
+            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-guitar-wood">
               <Link to="/pricing">View Pricing</Link>
             </Button>
           </div>
