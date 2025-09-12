@@ -49,14 +49,14 @@ export default function Home() {
             Watch Gary in action and see why students love learning with Ashby Guitar Tuition
           </p>
         </div>
-        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-          <div className="text-center">
-            <Music className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-            <p className="text-muted-foreground">Video content coming soon</p>
-            <p className="text-sm text-muted-foreground mt-2">
-              Contact Gary to see examples of his teaching methods
-            </p>
-          </div>
+        <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+          <iframe
+            src="https://www.youtube.com/embed/VnP62NH1icA"
+            title="Gary Crosby Guitar Teaching"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </section>
 
