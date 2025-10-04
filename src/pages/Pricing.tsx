@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Clock, Calendar, AlertCircle, CheckCircle } from "lucide-react";
+import { Clock, AlertCircle, CheckCircle } from "lucide-react";
 
 export default function Pricing() {
   const singleLessons = [
@@ -17,22 +17,6 @@ export default function Pricing() {
     }
   ];
 
-  const monthlyPackages = [
-    {
-      title: "4 Week Package",
-      price: "£52",
-      duration: "30 minute lessons",
-      savings: "Save £4",
-      description: "Consistent weekly lessons for steady progress"
-    },
-    {
-      title: "5 Week Package", 
-      price: "£65",
-      duration: "30 minute lessons", 
-      savings: "Save £5",
-      description: "Extended learning period for deeper skill development"
-    }
-  ];
 
   const policies = [
     {
@@ -45,11 +29,6 @@ export default function Pricing() {
       title: "No Show Policy",
       description: "Full amount chargeable for no attendance without prior notification"
     },
-    {
-      icon: CheckCircle,
-      title: "Monthly Savings",
-      description: "Prepaid monthly packages offer significant savings on individual lesson rates"
-    }
   ];
 
   return (
@@ -103,45 +82,6 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* Monthly Packages */}
-      <section className="bg-accent/30 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Monthly Packages
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Save money with our pre-paid monthly lesson packages
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {monthlyPackages.map((pkg, index) => (
-              <Card key={index} className="shadow-card hover:shadow-lg transition-shadow relative">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-guitar-wood text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
-                    {pkg.savings}
-                  </span>
-                </div>
-                <CardHeader className="text-center pb-4 pt-8">
-                  <div className="bg-guitar-wood/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Calendar className="h-8 w-8 text-guitar-wood" />
-                  </div>
-                  <CardTitle className="text-2xl text-foreground">{pkg.title}</CardTitle>
-                  <div className="text-4xl font-bold text-guitar-wood">{pkg.price}</div>
-                  <p className="text-muted-foreground">{pkg.duration}</p>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground mb-6">{pkg.description}</p>
-                  <Button asChild className="w-full" variant="outline">
-                    <Link to="/contact">Choose This Package</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Policies */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,7 +94,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {policies.map((policy, index) => (
             <Card key={index} className="shadow-card text-center">
               <CardContent className="p-6">
