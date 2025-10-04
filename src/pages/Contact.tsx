@@ -132,7 +132,7 @@ export default function Contact() {
                   Email your questions about lessons, pricing, or scheduling preferences
                 </p>
                 <Button asChild className="w-full">
-                  <a href="mailto:garydean777@yahoo.co.uk">Send Email</a>
+                  <a href="mailto:garydean777@yahoo.co.uk?subject=Guitar%20Lesson%20Inquiry">Email Gary</a>
                 </Button>
               </CardContent>
             </Card>
@@ -228,7 +228,7 @@ export default function Contact() {
                 <a href="tel:01530457659">Call Now</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-guitar-wood">
-                <a href="mailto:garydean777@yahoo.co.uk">Send Email</a>
+                <a href="mailto:garydean777@yahoo.co.uk?subject=Guitar%20Lesson%20Inquiry">Email Gary</a>
               </Button>
             </div>
           </div>
