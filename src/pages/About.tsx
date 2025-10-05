@@ -2,10 +2,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Music, Globe, Award, BookOpen } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { personSchema, breadcrumbSchema } from "@/utils/seoSchemas";
 
 export default function About() {
   return (
-    <div className="space-y-16 py-8">
+    <>
+      <SEO
+        title="About Gary Crosby - Professional Guitar Instructor"
+        description="Meet Gary Crosby, professional guitar instructor with over 40 years of playing experience and 25+ years of teaching. Expert in rock, jazz, blues, and folk guitar."
+        keywords="Gary Crosby guitar teacher, guitar instructor Ashby, professional guitar teacher, experienced guitar tutor"
+        canonical="/about"
+        schema={[personSchema, breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About", url: "/about" }])]}
+      />
+      <div className="space-y-16 py-8">
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -25,8 +35,9 @@ export default function About() {
           <div className="relative">
             <img
               src="/lovable-uploads/f0fc6d4f-cec3-4963-a6a1-48740adc5f59.png"
-              alt="Gary Crosby with acoustic guitar"
+              alt="Gary Crosby professional guitar instructor with acoustic guitar"
               className="rounded-lg shadow-2xl w-full"
+              loading="lazy"
             />
           </div>
         </div>
@@ -158,6 +169,7 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

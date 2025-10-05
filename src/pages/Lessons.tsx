@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Guitar, Music2, Users, BookOpen, Wrench, Headphones } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { serviceSchema, breadcrumbSchema } from "@/utils/seoSchemas";
 
 export default function Lessons() {
   const services = [
@@ -53,8 +55,16 @@ export default function Lessons() {
   ];
 
   return (
-    <div className="space-y-16 py-8">
-      {/* Hero Section */}
+    <>
+      <SEO
+        title="Guitar Lessons & Services - Electric, Acoustic & Bass"
+        description="Comprehensive guitar lessons in Ashby. Electric, acoustic, and bass guitar tuition. All styles: rock, blues, jazz, folk. Music theory and guitar maintenance services."
+        keywords="electric guitar lessons, acoustic guitar lessons, bass guitar lessons, music theory lessons, guitar setup, guitar maintenance"
+        canonical="/lessons"
+        schema={[serviceSchema, breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Lessons", url: "/lessons" }])]}
+      />
+      <div className="space-y-16 py-8">
+        {/* Hero Section */}
       <section className="bg-gradient-to-r from-guitar-wood to-guitar-amber text-primary-foreground py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -88,6 +98,7 @@ export default function Lessons() {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-guitar-wood/20"></div>
               </div>
@@ -191,6 +202,7 @@ export default function Lessons() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

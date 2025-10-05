@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { breadcrumbSchema, localBusinessSchema } from "@/utils/seoSchemas";
 
 export default function Contact() {
   const contactMethods = [
@@ -38,7 +40,15 @@ export default function Contact() {
   ];
 
   return (
-    <div className="space-y-16 py-8">
+    <>
+      <SEO
+        title="Contact Us - Book Your Guitar Lesson Today"
+        description="Contact Gary Crosby to book your guitar lesson in Ashby de la Zouch. Call 01530 457659 or email garydean777@yahoo.co.uk. Flexible scheduling available."
+        keywords="contact guitar teacher, book guitar lesson Ashby, guitar lesson booking, contact Gary Crosby"
+        canonical="/contact"
+        schema={[localBusinessSchema, breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Contact", url: "/contact" }])]}
+      />
+      <div className="space-y-16 py-8">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-guitar-wood to-guitar-amber text-primary-foreground py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -234,6 +244,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

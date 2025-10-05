@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Clock, AlertCircle, CheckCircle } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { breadcrumbSchema } from "@/utils/seoSchemas";
 
 export default function Pricing() {
   const singleLessons = [
@@ -32,7 +34,15 @@ export default function Pricing() {
   ];
 
   return (
-    <div className="space-y-16 py-8">
+    <>
+      <SEO
+        title="Guitar Lesson Pricing & Packages"
+        description="Affordable guitar lesson pricing in Ashby de la Zouch. 30-minute and 1-hour lessons available. Professional music education with flexible payment options."
+        keywords="guitar lesson prices, guitar tuition cost, affordable guitar lessons, lesson pricing Ashby"
+        canonical="/pricing"
+        schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Pricing", url: "/pricing" }])}
+      />
+      <div className="space-y-16 py-8">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-guitar-wood to-guitar-amber text-primary-foreground py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -149,6 +159,7 @@ export default function Pricing() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

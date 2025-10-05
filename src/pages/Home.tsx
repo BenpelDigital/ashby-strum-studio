@@ -2,10 +2,20 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Guitar, Users, Award, Music, Phone, Mail } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { organizationSchema, localBusinessSchema, breadcrumbSchema } from "@/utils/seoSchemas";
 
 export default function Home() {
   return (
-    <div className="space-y-8 sm:space-y-16">
+    <>
+      <SEO
+        title="Professional Guitar Lessons in Ashby de la Zouch"
+        description="Professional guitar lessons in Ashby de la Zouch with Gary Crosby. Expert teaching for all ages and levels, covering rock, jazz, blues, folk. Electric, acoustic, and bass guitar lessons available."
+        keywords="guitar lessons Ashby, guitar teacher Ashby de la Zouch, guitar tuition Leicestershire, learn guitar Ashby, electric guitar lessons, acoustic guitar lessons"
+        canonical="/"
+        schema={[organizationSchema, localBusinessSchema, breadcrumbSchema([{ name: "Home", url: "/" }])]}
+      />
+      <div className="space-y-8 sm:space-y-16">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-guitar-wood to-guitar-amber text-primary-foreground">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
@@ -31,8 +41,9 @@ export default function Home() {
             <div className="relative flex justify-center lg:justify-end">
               <img
                 src="/lovable-uploads/93596896-3608-495a-ad7e-2a7a9136ebf0.png"
-                alt="Gary Crosby teaching guitar"
+                alt="Gary Crosby teaching guitar lessons in Ashby de la Zouch"
                 className="rounded-lg shadow-2xl w-full max-w-sm sm:max-w-md mx-auto"
+                loading="eager"
               />
             </div>
           </div>
@@ -210,6 +221,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

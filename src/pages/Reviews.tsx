@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Star, Quote } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { breadcrumbSchema, faqSchema } from "@/utils/seoSchemas";
 
 export default function Reviews() {
   const reviews = [
@@ -41,7 +43,15 @@ export default function Reviews() {
   };
 
   return (
-    <div className="space-y-16 py-8">
+    <>
+      <SEO
+        title="Student Reviews & Testimonials"
+        description="Read reviews from satisfied students and parents. Discover why Gary Crosby is a trusted guitar teacher in Ashby de la Zouch with proven results."
+        keywords="guitar teacher reviews, guitar lesson testimonials, Ashby guitar tuition reviews, student feedback"
+        canonical="/reviews"
+        schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }])}
+      />
+      <div className="space-y-16 py-8">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-guitar-wood to-guitar-amber text-primary-foreground py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -197,6 +207,7 @@ export default function Reviews() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
