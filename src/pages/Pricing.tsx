@@ -9,7 +9,7 @@ export default function Pricing() {
   const singleLessons = [
     {
       duration: "1 Hour",
-      price: "£26",
+      price: "£28",
       description: "Perfect for comprehensive learning and skill development"
     },
     {
