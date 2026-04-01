@@ -14,7 +14,7 @@ export default function Pricing() {
     },
     {
       duration: "30 Minutes", 
-      price: "£16",
+      price: "£17",
       description: "Great for focused practice and technique refinement"
     }
   ];
