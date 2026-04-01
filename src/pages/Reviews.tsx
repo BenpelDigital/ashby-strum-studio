@@ -24,6 +24,18 @@ export default function Reviews() {
       rating: 5, 
       review: "Top teacher and guitarist. Gary can teach all different types of playing, whatever type of music you are into. Very patient, excellent value for money, and above all provides enjoyable lessons that help you to learn at your own pace. Can't rate him highly enough.",
       relationship: "Student"
+    },
+    {
+      name: "Emma Machin",
+      rating: 5,
+      review: "Can not say anything negative about Gary he is a fantastic instructor. My boys started when they were 14 and 10. They both love working with Gary. I think it is important to note that Gary adapts his approach for each student to support them and proceed at their pace. Over my boy's time, we have had to change days and times as my own commitments kept changing, and Gary always did his 100% best to accommodate. I love the different types and decades of music that Gary has exposed my boys to. My boys describe Gary as fun, exciting, interesting, and knowledgeable. In short Ashby Guitar Tuition is a great place to learn guitar 😀",
+      relationship: "Parent of students"
+    },
+    {
+      name: "John Millington",
+      rating: 5,
+      review: "I have been having lessons with Gary for about 2 years. I was a novice on electric guitar and wanted to learn to play blues. We have covered songs, theory, scales, soloing, 12 bar blues and much more. Gary tailors my lessons to my interests and ability. With me, he does not work from a book, yet he introduces new concepts each lesson by developing what we have previously covered or taking something I have been trying out to the next level - with an emphasis on simplicity, precision and timing. I particularly like the videos he makes of his playing for you to learn from and his use of backing tracks. Gary is patient, fun and thoroughly pleasant. I strongly recommend him.",
+      relationship: "Student"
     }
   ];
 
