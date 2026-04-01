@@ -36,6 +36,42 @@ export default function Reviews() {
       rating: 5,
       review: "I have been having lessons with Gary for about 2 years. I was a novice on electric guitar and wanted to learn to play blues. We have covered songs, theory, scales, soloing, 12 bar blues and much more. Gary tailors my lessons to my interests and ability. With me, he does not work from a book, yet he introduces new concepts each lesson by developing what we have previously covered or taking something I have been trying out to the next level - with an emphasis on simplicity, precision and timing. I particularly like the videos he makes of his playing for you to learn from and his use of backing tracks. Gary is patient, fun and thoroughly pleasant. I strongly recommend him.",
       relationship: "Student"
+    },
+    {
+      name: "Ray Moorehead",
+      rating: 5,
+      review: "Been visiting Gary weekly for a couple of months now. Retired beginner who wants to be better than just be strumming chords. Am really enjoying the coaching and learning from Gary. He's a great listener as well as musicial coach. He allows me to learn at my own pace, has helped me iron out faults and learn the correct technique with the resulting progress being just as I wanted. I have improved from how I was when I started and looking forward to continuing to learn and grow my playing style with his tuition. Highly recommend 😊",
+      relationship: "Student"
+    },
+    {
+      name: "Rebecca Poole",
+      rating: 5,
+      review: "My son who has just turned 10 has been having guitar lessons with Gary for over a year now. He started off having lessons at school but he had reached a point where he wasn't learning anything anymore and was starting to lose a bit of interest. I contacted Gary and it was best decision I made. Since my son has been having lessons with Gary he has come on leaps and bounds and his interest in the guitar has not wavered. Gary trys to find music that interests him while also helping him improve, he also adds in some music theory as my son wants to take his playing seriously. We find Gary to be patient and kind and my son never wants to miss a lesson. Gary pushes just enough and in a gentle way so my son leaves every week feeling positive but his mistakes addressed so he is not learning bad habits. I would highly reccomend Ashby Guitar Tuition to anyone who wants to learn to play guitar, especially to a high standard.",
+      relationship: "Parent of student"
+    },
+    {
+      name: "Karen Riley",
+      rating: 5,
+      review: "My daughter has been having lessons with Gary for 6 months now and has really improved her playing. Gary teaches students practical and theory based skills and knowledge whilst keeping lessons fun. He is friendly and tailors lessons to specific interests/needs and has given great advice on the best value & quality guitars- would highly recommend.",
+      relationship: "Parent of student"
+    },
+    {
+      name: "Taylor Innes",
+      rating: 5,
+      review: "Great teacher and great guy! I've been having lessons with Gary for almost a year now and I've come so far in that short time, he's a great teacher who always makes lessons fun. He even makes music theory fun! I would recommend him to anyone who wants to have lessons!",
+      relationship: "Student"
+    },
+    {
+      name: "Andy Hall",
+      rating: 5,
+      review: "As a begginer with no apparent natural musical ability, I tried to teach myself guitar with guidance from YouTube and other online platforms for a few years. I grew disappointed and frustrated with my lack of progress. I then reached out to Gary at Ashby Guitar Tuition about 9 months ago. Since then I've been really pleased with my progress. He has helped me iron out the bad techniques I arrived with, and has set the foundatins for me to be able to develop my guitar playing. I've found Gary to be a very patient teacher, who adapts his teaching style to suit my pace of learning. He has tailored the lessons to suit the music styles I like, which helps keep me motivated in practicing. I now enjoy practicing and look forward to my lessons with him.",
+      relationship: "Student"
+    },
+    {
+      name: "Matthew Munro",
+      rating: 5,
+      review: "Been playing guitar for over 20 years and have been in a rut for quite some time when I can across Gary on Google. I initially came to focus on finally learning some theory (which I am actually doing!) but I have also started learning proper technique and also expanding into other genres. Gary has helped me fall in love with guitar again and I love working with him. Highly recommended!",
+      relationship: "Student"
     }
   ];
 
