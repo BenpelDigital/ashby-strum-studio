@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ExternalLink } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { breadcrumbSchema, faqSchema } from "@/utils/seoSchemas";
 
@@ -114,6 +114,20 @@ export default function Reviews() {
             <span className="text-primary-foreground/90 ml-2">Consistently 5-star rated</span>
           </div>
         </div>
+      </section>
+
+      {/* Google Reviews Link */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <a
+          href="https://maps.app.goo.gl/b1MbfXe2m5Kpubns7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bg-guitar-wood text-primary-foreground font-semibold text-lg py-4 px-8 rounded-lg hover:bg-guitar-wood/90 transition-colors shadow-card"
+        >
+          <Star className="h-5 w-5 fill-guitar-amber text-guitar-amber" />
+          See Our Reviews on Google
+          <ExternalLink className="h-5 w-5" />
+        </a>
       </section>
 
       {/* Reviews Grid */}
